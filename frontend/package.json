@@ -1,0 +1,19 @@
+{
+  "name": "pickupready-board",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=21" },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.1",
+    "vite": "5.3.3"
+  }
+}
