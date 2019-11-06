@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/pickup
+    username: ${DB_USER:pickup}
+    password: ${DB_PASSWORD:pickup}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    properties:
+      hibernate.type.preferred_instant_jdbc_type: TIMESTAMP
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+
+pickup:
+  promise-minutes: 120
+  hold-hours: 72
+  expiry-sweep-ms: 300000
